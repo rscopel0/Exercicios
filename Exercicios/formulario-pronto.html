@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fullture</title>
+</head>
+<body>
+    <header>
+         <!--NAV É UMA SEÇÃO DE LINKS DE NAVEGAÇÃO listas e links-->
+         <nav>
+            <h1>VAGAS PARA REPRESENTANTES COMERCIAIS</h1>
+    </header>
+
+    <!--formulários-->
+    <form action="" method="">
+    <!-- LABEL É A LEGENDA NÍVEL DE BOAS PRÁTICAS-->
+    
+    <!--SPAN É PARA NÍVEL ORGANIZACIONAL OU PARA ESTILIZAR NÃO DEIXAR TEXTO SOLTO-->
+    <!--FOR=PARA ALGUM ID-->  
+        
+
+        <label for="name"> Nome:</label>
+        <input type="text" id="name" placeholder="Digite seu nome"
+        required>
+        <br><br>
+
+        <label for="idade">Data de nascimento:</label>
+        <input type="date" id="idade">
+        <br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email"  placeholder="Digite seu E-mail"
+        required>
+        <br><br>
+        <label for="tel">Seu Telefone:</<label>
+        <input type="tel" id="tel"  placeholder="Seu telefone aqui"
+        required></input>
+        <br><br>
+
+        <!--Campos obrigatórios, usar required-->
+        <label for="CPF">CPF:</label>
+        <input type="text" id="CPF" placeholder="Seu CPF"
+        required>
+        <br><br>
+        
+        <span><b>Marque as suas habilidades</span></b>
+        <br><br>
+        
+        <!--O INPUT CHECKBOX PERMITE MAIS DE UMA SELEÇÃO-->
+        <input type="checkbox" value="Vendas"> Vendas
+        <input type="checkbox" value="Atendimento ao público"> Atendimento ao público
+        <input type="checkbox" value="Experiência no ramo de confecções?">Experiência no ramo de confecções
+        <br><br>
+        <span>Possui veículo próprio?</span>
+        <input type="radio" name="sim-ou-nao" value="SIM">SIM
+        <input type="radio" name="sim-ou-nao" value="NÃO">NÃO
+        <br><br>
+        <label for="ano-do-veículo">Ano do seu veículo</label>
+        <select>
+            <option></option>
+            <option>2018</option>
+            <option>2019</option>
+            <option>2020</option>
+            <option>2021</option>
+            <option>2022</option>
+        </select>
+        <br><br>
+       
+        
+        <span>Em qual região do país pretende atuar?</span>
+        <br>
+
+        <select>
+            <option>Selecione</option>
+            <option>Sul</option>
+            <option>Sudeste</option>
+            <option>Nordeste</option>
+            <option>Centro-Oeste</option>
+            <option>Norte</option>
+        <br><br>
+        </select>
+        <h3>Conte-nos um pouco sobre você</h3>
+        <textarea name="" id="" rows="10" cols="80"></textarea>
+        <br><br>
+
+        <label><span><b>Os termos foram acordados no dia 14/08/2022 e são os seguintes:</b></label>
+        <br>
+        O candidato deve preencher fielmente todas as informações, não se atrasar no dia da entrevista.<br>
+        Deve comparecer quinze minutos antes do horário agendado 07:00hr do dia 25/08/2022.
+        <br><br>
+
+
+        
+        <label>Você aceita nossos termos?</label><br>
+        <!--A MARCAÇÃO RADIO SÓ TE DÁ A OPÇÃO DE UMA ESCOLHA-->
+        <!--PARA FUNCIONAR ELES DEVEM ESTAR NO MESMO NAME DE AGRUPAMENTO-->
+        <input type="radio" name="agrupamento-fulture" value="SIM"> SIM        
+        <input type="radio" name="agrupamento-fulture" value="NÃO"> NÃO
+        <br><br>
+         <button type="submit">Enviar Formulário</button>
+        <br><br>
+        <span><i><b>Boa sorte!</b></i></span>
+    </form>
+   
+    
+        
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
